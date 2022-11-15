@@ -129,7 +129,7 @@ footer {
     bottom: 10%;
     content: "";
     left: 0;
-    opacity: 0.5;
+    /* opacity: 0.5; */
     position: absolute;
     right: 0;
     top: 10%;
@@ -140,7 +140,7 @@ footer {
     bottom: 10%;
     content: "";
     left: 0;
-    opacity: 0.5;
+    /* opacity: 0.5; */
     position: absolute;
     right: 0;
     top: 10%;
@@ -194,3 +194,27 @@ footer {
   .button:hover {
     opacity: 0.3;
   }
+
+  
+@media only screen and (max-width: 500px) {
+    body {
+        flex-direction: column;
+    }
+    nav {
+        flex-direction: row;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+    }
+    .animated-border-quote{
+        flex-wrap: wrap;
+        justify-self: flex-start;
+        margin-left: 0%;
+        text-align: left;
+    }
+    .container {
+        width: 100%;
+    }
+}
+    
+   
