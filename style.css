@@ -1,9 +1,15 @@
 
 body {
-    background-image: url('images/background.jpg');
+    /* background-image: url('images/background.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
+    background-size: cover;
+    width: 100%; */
+    background: url('images/background.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
 }
 
@@ -12,6 +18,10 @@ a {
     text-decoration: none;
     display:inline;
     margin-right: 30px;
+}
+img{
+  display: block;
+  margin-right: auto;
 }
 
 h1 {
@@ -73,17 +83,17 @@ footer {
 
   .cardCert {
     display: flex;
-    flex-flow: row wrap;
     width: 50%;
     background-color: #e7ecf1;
     align-items: center;
-    margin: 5%;
+    margin-right: 5%;
     padding: 1%;
     box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     margin-left:  25%;
     opacity: 0.2;
     z-index: 10;
+    text-align: center;
   }
 
   .cardCert:hover {
@@ -103,14 +113,12 @@ footer {
   .container {
     padding: 2px 16px;
   }
-    .animated-border-quote {
-    display: inline-block;
-    margin-top: 20%;
-    margin-left: 60%;
-    overflow: hidden;
-    width: 100%;
-    font-size: xx-large;
-    
+  .animated-border-quote {
+  display: flex;
+  margin-top: 20%;
+  overflow: hidden;
+  margin-left: 50%;
+  font-size: x-large;
   }
   .animated-border-quote blockquote {
     background-color: #f0f5f9;
@@ -198,10 +206,12 @@ footer {
         flex-direction: column;
     }
     nav {
+        display: flex;
         flex-direction: row;
         justify-content: center;
         height: 100%;
         width: 100%;
+  
     }
     .animated-border-quote{
         flex-wrap: wrap;
@@ -210,7 +220,30 @@ footer {
         text-align: left;
     }
     .container {
-        width: 100%;
+        text-align:center;
+        display: flex;
+        flex-direction:column;
+        justify-content: space-around;
+    }
+    img{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .cardCert {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin-bottom: 5%;
+    }
+    header {
+      position: relative;
+      display: inline;
+      text-align: center;
+    }
+    #logo {
+      align-self:center;
+      margin-left: auto;
     }
 }
     
